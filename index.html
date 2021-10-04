@@ -1,0 +1,88 @@
+<!doctype html>
+<!--
+    Smart Power Meter 
+    Prototipo 1: Menu - Mediciones Instantaneas (MENU)
+-->
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Menu principal. Smart Power Meter 220V 30A." />
+    <meta name="keyword" content="Power Meter, Energia, Tension, Corriente, Potencia, Medidor, datos, inteligente">
+
+    <!-- Metaetiqueta receptiva -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Smart Power Meter</title>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center bg-secondary">
+            <a class="navbar-brand" href="#">
+                <h1><small class="text-muted">Smart Power Meter</small></h1>
+            </a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-sm-12 col-md-6 col-xl-6">
+                <div class="m-2">
+                    <button type="button" class="btn btn-primary btn-lg btn-block"
+                        onclick="enableMeter('paginas/medicionPrincipal.html')">Main Power Meter</button>
+                </div>
+                <div class="m-2">
+                    <a class="btn btn-primary btn-lg btn-block" href="paginas\mainDataLogger.html" role="button">Main Data
+                        Logger</a>
+                </div>
+                <div class="m-2">
+                    <button type="button" class="btn btn-primary btn-lg btn-block"
+                        onclick="enableMeter('paginas/medicionSolar.html')">Solar Power Meter</button>
+                </div>
+                <div class="m-2">
+                    <a class="btn btn-primary btn-lg btn-block" href="paginas\solarDataLogger.html" role="button">Solar Data
+                        Logger</a>
+                </div>
+                <div class="m-2">
+                    <a class="btn btn-primary btn-lg btn-block" href="paginas\domotica.html" role="button">Domotica</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+
+    <script src="archivos/firebaseConfig.js"></script>
+    <script src="archivos/mainButtons.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+<footer>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+        <a href="https://github.com/fabriolivari/Smart_Power_Meter"> SmartPowerMeter.com</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+
+</html>
