@@ -1,0 +1,115 @@
+<!doctype html>
+<!--
+    Smart Power Meter 
+    Prototipo 1: Menu - Mediciones Instantantaneas (EPEC)
+-->
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Mediciones Instantaneas. Smart Power Meter 220V 30A." />
+    <meta name="keyword" content="Power Meter, Energia, Tension, Corriente, Potencia, Medidor, datos, inteligente">
+
+    <!-- Metaetiqueta receptiva -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet"
+        href="E:\Desktop\Fabri\7mo Año\Formación en Ambiente en Trabajo\PowerMeter\Software\AplicacionWeb\WebSmartPowerMeter\archivos\styleCharts.css">
+
+    <title>Smart Power Meter</title>
+</head>
+
+<body>
+
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center bg-secondary">
+            <a class="navbar-brand"
+                href="E:\Desktop\Fabri\7mo Año\Formación en Ambiente en Trabajo\PowerMeter\Software\AplicacionWeb\WebSmartPowerMeter\index.html">
+                <h1><small class="text-muted">Solar Data Logger</small></h1>
+            </a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <ul class="nav nav-tabs nav-justified justify-content-center">
+                <li class="nav-item">
+                    <a href="#diario" class="nav-link active" role="tab" data-toggle="tab">Diario</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#mensual" class="nav-link" role="tab" data-toggle="tab">Mensual</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#anual" class="nav-link" role="tab" data-toggle="tab">Anual</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="diario" role="tabpanel" aria-labelledby="diario-tab">
+
+                <div class="card text-center border-0">
+                    <div class="card-body" style="padding-bottom: 0%;">
+                        <p id="valueDiario" class="card-text"> </p>
+                    </div>
+                </div>
+                <div id="chart_div_diario"></div>
+
+            </div>
+            <div class="tab-pane fade show" id="mensual" role="tabpanel" aria-labelledby="mensual-tab">
+
+                <div class="card text-center border-0">
+                    <div class="card-body" style="padding-bottom: 0%;">
+                        <p id="valueMensual" class="card-text"> </p>
+                    </div>
+                </div>
+                <div id="chart_div_mensual"></div>
+
+            </div>
+            <div class="tab-pane fade" id="anual" role="tabpanel" aria-labelledby="anual-tab">
+
+                <div class="card text-center border-0">
+                    <div class="card-body" style="padding-bottom: 0%;">
+                        <p id="valueAnual" class="card-text"> </p>
+                    </div>
+                </div>
+                <div id="chart_div_anual"></div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+    <script src="../archivos/firebaseConfig.js"></script>
+
+    <!-- Charts.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js"></script>
+    <!-- Google Charts -->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="../archivos/solarCharts.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
